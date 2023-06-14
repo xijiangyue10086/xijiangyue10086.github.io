@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>首页</title>
+	<style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+		    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(243, 230, 241);
+        }
+        .shell{
+            width: 90%;
+            height: 700px;
+            display: flex;
+        }
+        .box{
+            flex: 1;
+            overflow: hidden;
+            transition: .5s;
+            margin: 0 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+            border-radius: 20px;
+            border: 10px solid #fff;
+            background-color: #fff;
+        }
+        .box>img{
+            width: 200%;
+            height: 85%;
+            object-fit: cover;
+            transition: .5s;
+        }
+        .box>span{
+            font: 200 45px '优设标题黑';
+            text-align: center;
+            height: 15%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box:hover{
+            flex-basis: 40%;
+        }
+        .box:hover>img{
+            width: 100%;
+            height: 100%;
+        }
+		* {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(235, 185, 239);
+        }
+        .shell2{
+            /* 设置两边阴影 */
+            -webkit-mask-image: linear-gradient(to right,#0000,#000,#000,#0000);
+            overflow-x: auto;
+            display: flex;
+            /* 设置间距 */
+            gap: 2rem;
+            align-items:start;
+            padding:50px;
+        }
+        .shell2>div{
+            block-size: 150px;
+            background-color: #fff;
+            /* 设置宽高比 */
+            aspect-ratio: 1;
+            border-radius: 10px;
+            box-shadow: 0 0 5px 5px rgba(173, 173, 173, 0.3);
+        }
+        .shell2 img{
+            height: 100%;
+            width: 100%;
+        }
+
+        /* 设置滚动条的高度 */
+        ::-webkit-scrollbar{
+            height: 16px;
+        }
+        /* 设置滚动条的背景色 */
+        ::-webkit-scrollbar-track{
+            background-color: #f5f5f5;
+        }
+        ::-webkit-scrollbar-thumb{
+            background-color: rgb(128, 215, 239);
+            border-radius: 10px;
+        }
+    </style>
+ <meta charset="UTF-8">
+ <metaname="viewport" content="width=device-width,initial-scale=1">
+   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdn.bootcss.com/popper.js/1.12.5/umd/popper.min.js"></script>
+        <script src="https://cdn.bootcss.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/Untitled-1.css"  />
+
+</head>
+<body>
+    <div id="daohanglan">
+        <ul>                     
+                  <li><a href="./index3.html">济南故事</a></li>
+                  <li><a href="./index2.html">济南特产</a></li>
+                  <li><div class="dropdown">
+            <a href="#" class="dropbtn">特色旅游</a>
+            <div class="dropdown-content">
+                <a href="./baotuquan.html">趵突泉</a>
+                <a href="./daminghu.html">大明湖</a>
+                <a href="./furongjie.html">芙蓉街</a>
+                <a href="./qianfoshan.html">千佛山</a>
+                <a href="./qushuiting.html">曲水亭</a>
+                <a href="./wulongtan.html">五龙潭</a>
+            </div>
+        </div>
+        </li>
+                  <li><a href="./index.html">首页</a></li>
+          </ul>
+      </div>
+      
+      <div id="demo" class="carousel slide" data-ride="carousel">
+           <a href="#down"><h3 class="word">开始旅途</h3></a>
+          <!-- 指示符 -->
+          <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+          </ul>
+     <!-- 轮播图片 -->
+     <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img style="width: 100%" src="images/shouye11.JPG">
+        </div>
+		<div class="carousel-item">
+            <img style="width: 100%" src="images/tou2.JPG">
+        </div>
+        <div class="carousel-item">
+            <img style="width: 100%" src="images/shouye12.JPG">
+        </div>
+    </div>
+ 
+    <!-- 左右切换按钮 -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </a>
+</div>
+<!-- 标题 -->
+ <div id="down"><h2 id="dh2">特色美食</h2></div>
+    <div class="icons">
+            <div id="m1">
+                <img class="icons_items_imgs" src="images/meishi1.jpg" alt="">
+                <span>红<br>烧<br>排<br>骨</span>
+            </div>
+            <div id="m2">
+                <img class="icons_items_imgs" src="images/meishi2.png" alt="">
+                <span>九<br>转<br>大<br>肠</span>
+            </div>
+            <div id="m3">
+                <img class="icons_items_imgs" src="images/meishi3.jpg" alt="">
+                <span>把<br>子<br>肉</span>
+            </div>
+            <div id="m4">
+                <img  class="icons_items_imgs" src="images/zang1.jpg" alt="">
+                <span>坛<br>子<br>肉</span>
+            </div>
+            <div id="m5">
+                <img  class="icons_items_imgs" src="images/zang2.jpg" alt="">
+                <span>奶<br>汤<br>蒲<br>菜</span>
+            </div>
+            <div id="m6">
+                <img  class="icons_items_imgs" src="images/zang3.jpg" alt="">
+                <span>烤<br>全<br>羊</span>
+            </div>
+            <div id="m7"></div> 			
+    </div>
+    <div id="in">
+        <div id="inh2">
+                <h2>风景名胜</h2>
+        </div>
+        <div id="inimg1">
+            <img id="im1" src="images/baotu1.jpg"/>
+            <div id="z01"></div>
+            <div id="z1">
+                <h2 id="h02">趵突泉<br>BAO TU QUAN<br></h2>
+                <p id="p01">济南城南古观里，别开仙境非尘市。<br>致我清跸两度临，却为突泉三窦美。<br>
+                    译：济南城南边的古寺里，却非人世间，<br>让我坐着车辇两次来到这里。<br>实在是为了看趵突泉的三孔水流之美。<br></p>
+            </div>
+        </div>
+
+
+        <div id="inimg2">
+            <img id="im2" src="images/baotu1.jpg"/>
+            <div id="z02"></div>
+            <div id="z2">
+                <h2 id="h12">趵突泉</h2>
+                <p id="p11">
+<br>清代：顾我锜
+
+<br>原文：济南城西天下绝，珍珠金线交横发。<br>伏流到此倏复通，平地跳出三白龙。
+
+<br>译文：济南城西的趵突泉是天下一绝，像珍珠金线交接的喷射出。<br>伏地流淌到这里忽然通顺了，从平地上喷射出三条水龙。</p>
+            </div>
+        </div>
+
+        <div id="inimg3">
+            <img id="im3" src="./images/baotu1.jpg"/>
+            <div id="z03"></div>
+            <div id="z3">
+                <h2 id="h22">木兰花·趵突泉<br></h2>
+                <p id="p21"> 
+
+            <br>清代：陈曾寿
+
+         <br>清泠一勺轻千里，倦客劳尘聊与洗。 
+
+<br>译文：清冷的一勺泉水让人感觉很舒服，疲倦的游客停下来一边洗脸一边聊天。</p>
+            </div>
+        </div>
+      </div>
+	  <div>
+        <div id="inimg5">
+            <img id="im5" src="./images/daming.png"/>
+            <div id="z05"></div>
+            <div id="z5">
+                <h2 id="h05">大<br><br>明<br><br>湖<br></h2>
+                <p id="p05">
+                   <br>“冬泛冰天，夏挹荷浪，秋容芦雪，
+                   <br>春色杨烟，鼓枻其中，如游香国”；
+				   <br>“四面荷花三面柳，一城山色半城湖”；
+                    <br>“鸥鹭点乎清波，萧鼓助其远韵，固江北之独胜也。”
+                    <br><br><br><br><br></p>
+            </div>
+        </div>
+	   <div id="inimg4">
+            <img id="im4" src="images/daming.png"/>
+            <div id="z04"></div>
+            <div id="z4">
+                <h2 id="h22">大明湖<br>DA MINH HU<br></h2>
+                <p id="p21">东藩驻皂盖，北渚凌清河。海右此亭古，济南名士多。
+				<br>云山已发兴，玉佩仍当歌。修竹不受暑，交流空涌波。<br></p>
+            </div>
+        </div> 
+		</div>
+		<div id="c1">
+		<img id="img6" src="images/shouye122.jpg">
+		</div>
+		<div id="c2">
+		  <h2>
+		  <p>超<br><br>然<br><br>楼</p></h2>  
+		 </div>
+         <div id="c02">
+            <h2>
+            <p></p>
+            </h2>  
+           </div>
+     <div id="c3">
+		 <div class="shell">
+        <div class="box">
+            <img src="images/shouye111.JPG">
+            <span>大明湖</span>
+        </div>
+        <div class="box">
+            <img src="images/shouye155.JPG">
+            <span>曲水亭街</span>
+        </div>
+        <div class="box">
+            <img src="images/shouye133.JPG">
+            <span>千佛山</span>
+        </div>
+        <div class="box">
+            <img src="images/shouye144.JPG">
+            <span>曲水亭街</span>
+        </div>
+        <div class="box">
+            <img src="images/shouye14.JPG">
+            <span>千佛山</span>
+        </div>
+    </div>
+	</div>
+	<div id="c5">
+	<div class="shell2">
+        <div><img src="images/shou1.jpg" alt=""></div>
+        <div><img src="images/shoy2.jpg" alt=""></div>
+        <div><img src="images/shoy3.jpg" alt=""></div>
+        <div><img src="images/shou4.jpg" alt=""></div>
+        <div><img src="images/shou5.jpg" alt=""></div>
+        <div><img src="images/shou6.jpg" alt=""></div>
+        <div><img src="images/shou7.jpg" alt=""></div>
+        <div><img src="images/shou8.jpg" alt=""></div>
+    </div>
+	</div>
+    <!--footer-->
+<div class="foot">
+    <p>济南大学</p>
+    <p>团队成员：臧洁 范淑琪 姜心玥</p>
+  </div>
+  <div class="clear"></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0
+}
+  /* 下拉菜单设置样式 */
+        .dropdown-content {
+            /* 隐藏菜单 */
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* 设置链接元素的最小宽度 */
+            min-width: 140px;
+            height: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            overflow: auto;
+        }
+        .dropdown-content a {
+            display: block;
+            color: black;
+            text-decoration: none;  
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1
+          
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+#daohanglan{
+	width:100%;
+	height:70px;
+	background:rgba(0,0,0,0.5) ;
+	position: fixed;
+	z-index: 9999;
+	top:0px;
+}
+
+#daohanglan li {
+	display: inline-block;
+	width: 100px;
+	height: 70px;
+	background:rgba(0,0,0,0.0) ;
+	font-size: 20px; /*设置字体大小*/
+	text-align: center; /*设置字体对齐方式*/				
+	line-height: 70px; /*设置字体垂直居中，其值需要等于height的值*/
+	float: right;
+}
+			
+#daohanglan a {
+	color: white;
+	text-decoration: none; /*去掉超链接下划线*/
+	}
+#daohanglan a:hover {
+	color: blue; /*鼠标悬停显示红色*/
+}
+#daohanglan a:active {
+	color: green; /*鼠标激活显示蓝色*/
+	}
+#demo img{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+#demo .word{
+	width: 160px;
+    height: 40px;
+	color:white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	text-align: center;
+	z-index: 9999;
+	font-size: 25px;
+	border-style: solid;
+    border-width: thin;
+    border-color: white;
+    border-radius: 20px;
+
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.icons_items {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    margin-top: 80px;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 200px;
+    height: 220px;
+    
+}
+.icons_items_imgs {
+    border-radius: 10%;
+    width: 200px;
+    height: 120px;
+    margin-bottom: 30px;
+}
+.introduce {
+    display: flex;
+    flex-direction: column;
+}
+
+.introduce_item {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    border-style: solid;
+    border-width: thin;
+    border-color: lightblue;
+    box-shadow: 5px 1px 1px 1px #6C8192FF;
+}
+.introduce_item_img {
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+}
+.introduce_item_title {
+    color: rgb(5, 39, 20);
+	width: 450px;
+    font-size: 18px;
+    line-height: 36px;
+    align-self: center;
+    padding-left: 100px;
+}
+
+.introduce_item_titles {
+    width: 400px;
+    font-size: 18px;
+    line-height: 36px;
+    align-self: center;
+    padding-right: 100px;
+}
+/*页脚*/
+.foot{ width:100%; height:360px;margin:auto; margin-top:20px;border-top:3px solid #900; background:#444;color:#fff; }
+.foot{ font-size:14px;text-align:center; line-height:36px; }
